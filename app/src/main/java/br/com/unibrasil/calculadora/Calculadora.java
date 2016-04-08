@@ -20,7 +20,7 @@ prof. Martin Morães
 
 public class Calculadora extends AppCompatActivity implements View.OnClickListener {
     TextView tvValores;
-    ImageButton bt1, bt2, bt3, bt4, bt5, bt6, bt7, bt8, bt9, bt0, btAdicao, btSubtracao, btMultiplicacao, btDivisao, btIgual, btPonto;
+    ImageButton bt1, bt2, bt3, bt4, bt5, bt6, bt7, bt8, bt9, bt0, btAdicao, btSubtracao, btMultiplicacao, btDivisao, btPonto;
     double vlr1, vlr2, resultado = 0;
     char operacao = ' ';
 
@@ -43,7 +43,6 @@ public class Calculadora extends AppCompatActivity implements View.OnClickListen
         btSubtracao = (ImageButton) findViewById(R.id.btSubtracao);
         btMultiplicacao = (ImageButton) findViewById(R.id.btMultiplicacao);
         btDivisao = (ImageButton) findViewById(R.id.btDivisao);
-        btIgual = (ImageButton) findViewById(R.id.btIgual);
         btPonto = (ImageButton) findViewById(R.id.btPonto);
 
         bt1.setOnClickListener(this);
@@ -60,7 +59,6 @@ public class Calculadora extends AppCompatActivity implements View.OnClickListen
         btSubtracao.setOnClickListener(this);
         btMultiplicacao.setOnClickListener(this);
         btDivisao.setOnClickListener(this);
-        btIgual.setOnClickListener(this);
         btPonto.setOnClickListener(this);
     }
 
@@ -113,9 +111,6 @@ public class Calculadora extends AppCompatActivity implements View.OnClickListen
                 break;
             case R.id.btDivisao:
                 calcula('/');
-                break;
-            case R.id.btIgual:
-                calcula(operacao);
                 break;
         }
     }
