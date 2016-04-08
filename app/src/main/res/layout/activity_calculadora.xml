@@ -9,153 +9,177 @@
 
 
     <LinearLayout
-        android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="C"
+            android:layout_gravity="center"
+            android:background="@android:color/holo_red_light"
+            android:id="@+id/tvLimpa"
+            android:onClick="Limpa"/>
 
         <TextView
+            android:id="@+id/tvValores"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@android:color/background_light"
+            android:gravity="right"
             android:hint="Digite aqui..."
             android:textColor="@color/colorPrimary"
-            android:textSize="40dp"
-            android:gravity="right"
-            android:id="@+id/tvValores"/>
+            android:textSize="40dp"/>
+
     </LinearLayout>
 
     <LinearLayout
-        android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1">
+        android:layout_weight="1"
+        android:orientation="horizontal">
 
         <ImageButton
+            android:id="@+id/btQuatro"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:src="@mipmap/ic_4"
-            android:id="@+id/btQuatro"/>
+            android:src="@mipmap/ic_4"/>
 
         <ImageButton
+            android:id="@+id/btCinco"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:src="@mipmap/ic_5"
-            android:id="@+id/btCinco"/>
+            android:src="@mipmap/ic_5"/>
 
         <ImageButton
+            android:id="@+id/btSeis"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:src="@mipmap/ic_6"
-            android:id="@+id/btSeis"/>
+            android:src="@mipmap/ic_6"/>
 
         <ImageButton
+            android:id="@+id/btDivisao"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="2"
-            android:src="@mipmap/ic_divisao"
-            android:id="@+id/btDivisao"/>
+            android:src="@mipmap/ic_divisao"/>
     </LinearLayout>
 
     <LinearLayout
-        android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1">
+        android:layout_weight="1"
+        android:orientation="horizontal">
 
         <ImageButton
+            android:id="@+id/btSete"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:src="@mipmap/ic_7"
-            android:id="@+id/btSete"/>
+            android:src="@mipmap/ic_7"/>
 
         <ImageButton
+            android:id="@+id/btOito"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:src="@mipmap/ic_8"
-            android:id="@+id/btOito"/>
+            android:src="@mipmap/ic_8"/>
 
         <ImageButton
+            android:id="@+id/btNove"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:src="@mipmap/ic_9"
-            android:id="@+id/btNove"/>
+            android:src="@mipmap/ic_9"/>
 
         <ImageButton
+            android:id="@+id/btMultiplicacao"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="2"
-            android:src="@mipmap/ic_multiplicacao"
-            android:id="@+id/btMultiplicacao"/>
+            android:src="@mipmap/ic_multiplicacao"/>
     </LinearLayout>
 
     <LinearLayout
-        android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1">
+        android:layout_weight="1"
+        android:orientation="horizontal">
 
         <ImageButton
+            android:id="@+id/btUm"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:src="@mipmap/ic_1"
-            android:id="@+id/btUm"/>
+            android:src="@mipmap/ic_1"/>
 
         <ImageButton
+            android:id="@+id/btDois"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:src="@mipmap/ic_2"
-            android:id="@+id/btDois"/>
+            android:src="@mipmap/ic_2"/>
 
         <ImageButton
+            android:id="@+id/btTres"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:src="@mipmap/ic_3"
-            android:id="@+id/btTres"/>
+            android:src="@mipmap/ic_3"/>
 
         <ImageButton
+            android:id="@+id/btSubtracao"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="2"
-            android:src="@mipmap/ic_subtracao"
-            android:id="@+id/btSubtracao"/>
+            android:src="@mipmap/ic_subtracao"/>
     </LinearLayout>
 
     <LinearLayout
-        android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1">
+        android:layout_weight="1"
+        android:orientation="horizontal">
 
         <ImageButton
+            android:id="@+id/btZero"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:src="@mipmap/ic_0"
-            android:id="@+id/btZero"/>
+            android:src="@mipmap/ic_0"/>
 
         <ImageButton
+            android:id="@+id/btPonto"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_weight="3"
-            android:src="@mipmap/ic_igual"
-            android:id="@+id/btIgual"/>
+            android:layout_weight="1"
+            android:src="@mipmap/ic_ponto"/>
 
         <ImageButton
+            android:id="@+id/btAdicao"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="2"
-            android:src="@mipmap/ic_adicao"
-            android:id="@+id/btAdicao"/>
+            android:src="@mipmap/ic_adicao"/>
 
     </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal">
 
+        <ImageButton
+            android:id="@+id/btIgual"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/darker_gray"
+            android:src="@mipmap/ic_igual"/>
+    </LinearLayout>
 </LinearLayout>
